@@ -34,6 +34,7 @@ repositories {
 }
 
 dependencies {
+    def androidXCore = safeExtGet('androidXCore', "1.6.0")
     implementation 'com.facebook.react:react-native:+'
-    implementation 'androidx.core:core:1.+'
+    implementation 'androidx.core:core:$androidXCore'
 }
